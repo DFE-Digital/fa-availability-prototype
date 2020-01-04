@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+FA Availability Prototype
+{% endblock %}
+
+{% block content %}
+
+{% include "availability/components/result-header.html" %}
+
+    <div class="govuk-grid-row">
+
+        {% set cta={ text: 'Add to my list', link:"pc"} %}
+        <div class="govuk-grid-column-one-third">
+        {% set parent={ name: 'p1', postcode:"pc", beds:2, type:"type", capabilities:['c1', 'c2']} %}
+        {% include "availability/components/card.html" %}
+        </div>
+        <div class="govuk-grid-column-one-third">
+        {% set parent={ name: 'p2', postcode:"pc", beds:2, type:"type", capabilities:['c1', 'c2']} %}
+        {% include "availability/components/card.html" %}
+        </div>
+        <div class="govuk-grid-column-one-third">
+        {% set parent={ name: 'p3', postcode:"pc", beds:2, type:"type", capabilities:['c1', 'c2']} %}
+        {% include "availability/components/card.html" %}
+        </div>
+    </div>
+
+{% endblock %}

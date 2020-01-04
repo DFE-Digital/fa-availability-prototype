@@ -1,0 +1,10 @@
+<div class="govuk-form-group">
+    <label class="govuk-label" for="sort">
+        {{ filter.label }}:
+    </label>
+    <select class="govuk-select" id="sort" name="sort">
+    {% for option in filter.options %}
+        <option value="published">{{ option }}</option>
+    {% endfor %}
+    </select>
+</div>

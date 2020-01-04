@@ -16,7 +16,7 @@ FA Availability Prototype
 </div>
 
 <div class="govuk-grid-row">
-
+    <div class="govuk-grid-column-full">
     <dl class="govuk-summary-list">
         <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
@@ -99,9 +99,11 @@ FA Availability Prototype
             </dd>
         </div>
     </dl>
+    </div>
 </div>
 
 <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
     <h3 class="govuk-heading-l">Approved to foster</h3>
     <dl class="govuk-summary-list">
         <div class="govuk-summary-list__row">
@@ -129,9 +131,11 @@ FA Availability Prototype
             </dd>
         </div>
     </dl>
+    </div>
 </div>
 
 <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
     <h3 class="govuk-heading-l">Availability</h3>
     <dl class="govuk-summary-list">
         <div class="govuk-summary-list__row">
@@ -143,9 +147,11 @@ FA Availability Prototype
             </dd>
         </div>
     </dl>
+    </div>
 </div>
 
 <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
     <h3 class="govuk-heading-l">Household</h3>
     <dl class="govuk-summary-list">
         <div class="govuk-summary-list__row">
@@ -189,9 +195,11 @@ FA Availability Prototype
             </dd>
         </div>
     </dl>
+    </div>
 </div>
 
 <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
     <h3 class="govuk-heading-l">Training and qualifications </h3>
     <dl class="govuk-summary-list">
         <div class="govuk-summary-list__row">
@@ -259,24 +267,29 @@ FA Availability Prototype
             </dd>
         </div>
     </dl>
+    </div>
 </div>
 
 
 <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
     <h3 class="govuk-heading-l">Special needs and disability skills: </h3>
     <ul class="govuk-list govuk-list--bullet">
         <li>moderate learning difficulty</li>
         <li>social, emotional and mental health issues</li>
         <li>speech, language and communication needs </li>
     </ul>
+    </div>
 </div>
 
 <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
     <h3 class="govuk-heading-l">Driving license and vehicle: </h3>
     <ul class="govuk-list govuk-list--bullet">
-        <li>Full UK</li>
-        <li>own vehicule</li>
+        <li>Full UK:  {{ parent.drivingLicence }}</li>
+        <li>Own vehicle: {{ parent.car }}</li>
     </ul>
+    </div>
 </div>
 
 {% endblock %}

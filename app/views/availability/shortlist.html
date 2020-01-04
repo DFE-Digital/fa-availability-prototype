@@ -70,6 +70,8 @@ FA Availability Prototype
         {% for fp in fosterParents %}
         {% set parent=fp %}
         {% include "availability/components/card.html" %}
+        {% else %}
+        <p class="govuk-body">No foster parents matching current filters.</p class="govuk-body">
         {% endfor %}
 
     </div>

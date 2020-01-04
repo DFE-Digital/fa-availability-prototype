@@ -3,8 +3,9 @@
         {{ filter.label }}:
     </label>
     <select class="govuk-select" id="sort" name="sort">
+        <option disabled selected value>none selected</option>
     {% for option in filter.options %}
-        <option value="published">{{ option }}</option>
+        <option value="{{ option }}">{{ option }}</option>
     {% endfor %}
     </select>
 </div>

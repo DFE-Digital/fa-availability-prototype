@@ -8,66 +8,71 @@ FA Availability Prototype
 
 {% include "availability/components/result-header.html" %}
 
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third" style="background-color:#f3f2f1;padding:20px">
-            <fieldset class="govuk-fieldset">
-                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                    <h1 class="govuk-fieldset__heading">
-                        Filter shortlist
-                    </h1>
-                </legend>
-                <div class="govuk-form-group">
-                    {% set filter={ label: 'From', options: ['now', 'date 1', 'date 2'] } %}
-                    {% include "availability/components/filter.html" %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third" style="background-color:#f3f2f1;padding:20px">
+        <form action="/shortlist" method="get" class="form">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h1 class="govuk-fieldset__heading">
+                    Filter shortlist
+                </h1>
+            </legend>
+            <div class="govuk-form-group">
+                {% set filter={ label: 'From', options: ['now', 'date 1', 'date 2'] } %}
+                {% include "availability/components/filter.html" %}
 
-                    {% set filter={ label: 'For how long', options: ['up to 1 week', '2 weeks', '3 weeks', '1 month', '2 months', 'Long-term'] } %}
-                    {% include "availability/components/filter.html" %}
+                {% set filter={ label: 'For how long', options: ['up to 1 week', '2 weeks', '3 weeks', '1 month', '2 months', 'Long-term'] } %}
+                {% include "availability/components/filter.html" %}
 
-                    {% set filter={ label: 'Location', options: ['up to 20 miles', 'postcode'] } %}
-                    {% include "availability/components/filter.html" %}
+                {% set filter={ label: 'Location', options: ['up to 20 miles', 'postcode'] } %}
+                {% include "availability/components/filter.html" %}
 
-                    {% set filter={ label: 'Types of foster care approved for', options: ['Emergency', 'Kinship', 'Short-term', 'Short breaks', 'Remand', 'Fostering for adoption', 'Long-term', 'Family and friends', 'Specialist therapeutic'] } %}
-                    {% include "availability/components/filter.html" %}
+                {% set filter={ label: 'Types of foster care approved for', options: ['Emergency', 'Kinship', 'Short-term', 'Short breaks', 'Remand', 'Fostering for adoption', 'Long-term', 'Family and friends', 'Specialist therapeutic'] } %}
+                {% include "availability/components/filter.html" %}
 
-                    {% set filter={ label: 'Other children in household', options: ['Birth children', 'Other foster children'] } %}
-                    {% include "availability/components/filter.html" %}
+                {% set filter={ label: 'Other children in household', options: ['Birth children', 'Other foster children'] } %}
+                {% include "availability/components/filter.html" %}
 
-                    {% set filter={ label: 'Ethnic group', options: ['British', 'Caribbean', 'Asian', 'African'] } %}
-                    {% include "availability/components/filter.html" %}
+                {% set filter={ label: 'Ethnic group', options: ['British', 'Caribbean', 'Asian', 'African'] } %}
+                {% include "availability/components/filter.html" %}
 
-                    {% set filter={ label: 'Religion', options: ['No religion', 'Christian (all denominations)', 'Buddhist', 'Hindu', 'Jewish', 'Muslim', 'Sikh', 'Any other religion'] } %}
-                    {% include "availability/components/filter.html" %}
+                {% set filter={ label: 'Religion', options: ['No religion', 'Christian (all denominations)', 'Buddhist', 'Hindu', 'Jewish', 'Muslim', 'Sikh', 'Any other religion'] } %}
+                {% include "availability/components/filter.html" %}
 
-                    {% set filter={ label: 'Languages spoken at home', options: ['English', 'Arabic', 'Bengali', 'Chinese (Cantonese)', 'Gujarati', 'Polish', 'Punjabi', 'Turkish', 'Urdu', 'Welsh', 'Other'] } %}
-                    {% include "availability/components/filter.html" %}
+                {% set filter={ label: 'Languages spoken at home', options: ['English', 'Arabic', 'Bengali', 'Chinese (Cantonese)', 'Gujarati', 'Polish', 'Punjabi', 'Turkish', 'Urdu', 'Welsh', 'Other'] } %}
+                {% include "availability/components/filter.html" %}
 
-                    {% set filter={ label: 'Special needs and disability skills', options: ['specific learning difficulty', 'moderate learning difficulty', 'severe learning difficulty', 'profound and multiple learning difficulty', 'social, emotional and mental health issues', 'speech, language and communication needs', 'hearing impairment', 'visual impairment', 'multi-sensory impairment', 'physical disability', 'autistic spectrum disorder', 'other difficulty', 'SEN support but no specialist assessment of type of need'] } %}
-                    {% include "availability/components/filter.html" %}
+                {% set filter={ label: 'Special needs and disability skills', options: ['specific learning difficulty', 'moderate learning difficulty', 'severe learning difficulty', 'profound and multiple learning difficulty', 'social, emotional and mental health issues', 'speech, language and communication needs', 'hearing impairment', 'visual impairment', 'multi-sensory impairment', 'physical disability', 'autistic spectrum disorder', 'other difficulty', 'SEN support but no specialist assessment of type of need'] } %}
+                {% include "availability/components/filter.html" %}
 
-                    {% set filter={ label: 'Accessibility', options: ['Home is wheelchair accessible', 'Disabled toilet and bathroom ', 'Wheelchair accessible vehicle'] } %}
-                    {% include "availability/components/filter.html" %}
+                {% set filter={ label: 'Accessibility', options: ['Home is wheelchair accessible', 'Disabled toilet and bathroom ', 'Wheelchair accessible vehicle'] } %}
+                {% include "availability/components/filter.html" %}
 
-                    {% set filter={ label: 'Driving license and vehicle', options: ['Has driving license and vehicle', 'Partner has driving license and vehicle'] } %}
-                    {% include "availability/components/filter.html" %}
+                {% set filter={ label: 'Driving license and vehicle', options: ['Has driving license and vehicle', 'Partner has driving license and vehicle'] } %}
+                {% include "availability/components/filter.html" %}
 
-                    {% set filter={ label: 'Pets', options: ['Dog', 'Cat', 'Other pet'] } %}
-                    {% include "availability/components/filter.html" %}
+                {% set filter={ label: 'Pets', options: ['Dog', 'Cat', 'Other pet'] } %}
+                {% include "availability/components/filter.html" %}
 
-                    {% set filter={ label: 'Local authority or IFA', options: ['local authority', 'independent foster agency'] } %}
-                    {% include "availability/components/filter.html" %}
-                </div>
-            </fieldset>
-        </div>
-
-        <div class="govuk-grid-column-two-thirds">
-
-            {% set cta={ text: 'Add to my list', link:"pc"} %}
-            {% for fp in fosterParents %}
-            {% set parent=fp %}
-            {% include "availability/components/card.html" %}
-            {% endfor %}
-
-        </div>
+                {% set filter={ label: 'Local authority or IFA', options: ['local authority', 'independent foster agency'] } %}
+                {% include "availability/components/filter.html" %}
+            </div>
+            <button class="govuk-button" data-module="govuk-button">
+                Apply filters
+            </button>
+        </fieldset>
+    </form>
     </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+        {% set cta={ text: 'Add to my list', link:"pc"} %}
+        {% for fp in fosterParents %}
+        {% set parent=fp %}
+        {% include "availability/components/card.html" %}
+        {% endfor %}
+
+    </div>
+</div>
 
 {% endblock %}

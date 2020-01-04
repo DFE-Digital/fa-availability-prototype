@@ -5,27 +5,27 @@
                     Name
                   </dt>
                   <dd class="govuk-summary-list__value">
-                    {{ parent.name }}
+                    {{ parent.title }} {{ parent.fname }} {{ parent.surname }}
                   </dd>
                 </div>
                 <div class="govuk-summary-list__row">
                   <dt class="govuk-summary-list__key">
-                    Postcode
+                    Address
                   </dt>
                   <dd class="govuk-summary-list__value">
-                    {{ parent.postcode }}
+                    {{ parent.address }}
                   </dd>
                 </div>
                 <div class="govuk-summary-list__row">
                   <dt class="govuk-summary-list__key">
-                    No. of beds available
+                    Placement type
                   </dt>
                   <dd class="govuk-summary-list__value">
-                    {{ parent.beds }}
+                    {{ parent.type }}
                   </dd>
                 </div>
               </dl>
-    <a href="/foster-parent-profile" class="govuk-link">See full profile</a>
+    <a href="/foster-parent-profile?id={{ parent.id }}" class="govuk-link">See full profile</a>
     {% if cta %}
     <button class="govuk-button" data-module="govuk-button">
         {{ cta.text }}

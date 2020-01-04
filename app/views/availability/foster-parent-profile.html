@@ -10,7 +10,7 @@ FA Availability Prototype
     <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-xl">
             Foster parent profile
-            <span class="govuk-caption-xl">Ms Reena Pillow</span>
+            <span class="govuk-caption-xl">{{ parent.title }} {{ parent.fname }} {{ parent.surname }}</span>
         </h1>
     </div>
 </div>
@@ -23,7 +23,7 @@ FA Availability Prototype
                 Working through:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                -
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -31,7 +31,7 @@ FA Availability Prototype
                 Gender:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                {{ parent.gender }}
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -39,7 +39,7 @@ FA Availability Prototype
                 Date of birth:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                -
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -47,7 +47,7 @@ FA Availability Prototype
                 Age:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                -
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -55,7 +55,7 @@ FA Availability Prototype
                 Address:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                {{ parent.address }}
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -63,7 +63,7 @@ FA Availability Prototype
                 Distance from child’s school:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                -
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -71,7 +71,7 @@ FA Availability Prototype
                 Languages spoken in addition to English:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                {{ parent.language2 }}
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -79,7 +79,7 @@ FA Availability Prototype
                 Ethnic group:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                {{ parent.ethnic }}
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -87,7 +87,7 @@ FA Availability Prototype
                 Religion:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                {{ parent.religion }}
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -95,7 +95,7 @@ FA Availability Prototype
                 Date qualified as a foster parent:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                -
             </dd>
         </div>
     </dl>
@@ -109,7 +109,7 @@ FA Availability Prototype
                 How many children?
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                {{ parent.noExistingChildren }}
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -117,7 +117,7 @@ FA Availability Prototype
                 Type of fostering:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                {{ parent.type }}
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -125,7 +125,7 @@ FA Availability Prototype
                 For these ages:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                {{ parent.childAgeRange }}
             </dd>
         </div>
     </dl>
@@ -139,7 +139,7 @@ FA Availability Prototype
                 Beds currently available:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                -
             </dd>
         </div>
     </dl>
@@ -153,7 +153,7 @@ FA Availability Prototype
                 Accommodation type:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                -
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -161,7 +161,7 @@ FA Availability Prototype
                 Total number of beds available for foster children:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                {{ parent.beds }}
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -169,7 +169,7 @@ FA Availability Prototype
                 Other people in household:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                -
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -177,7 +177,7 @@ FA Availability Prototype
                 Pets:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                {{ parent.pets }}
             </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -185,7 +185,7 @@ FA Availability Prototype
                 Accessibility:
             </dt>
             <dd class="govuk-summary-list__value">
-                *value
+                -
             </dd>
         </div>
     </dl>

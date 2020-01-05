@@ -66,7 +66,7 @@ FA Availability Prototype
 
     <div class="govuk-grid-column-two-thirds">
 
-        {% set cta={ text: 'Add to my list', link:"pc"} %}
+        {% set cta={ remove: 'Remove from my list', add: 'Add to my list'} %}
         {% for fp in fosterParents %}
         {% set parent=fp %}
         {% include "availability/components/card.html" %}

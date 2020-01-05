@@ -27,15 +27,23 @@
   </dl>
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-one-half">
       <a href="/foster-parent-profile?id={{ parent.id }}" class="govuk-link">See full profile</a>
 
     </div>
-    <div class="govuk-grid-column-one-third" style="text-align:right">
+    <div class="govuk-grid-column-one-half" style="text-align:right">
       {% if cta %}
-      <button class="govuk-button" data-module="govuk-button" style="text-align:right">
-        {{ cta.text }}
-      </button>
+      <form action="/shortlist" method="post" class="form">
+        {% if parent.selected %}
+        <input type="hidden" name="remove" value="{{ parent.id }}" />
+        {% else %}
+        <input type="hidden" name="add" value="{{ parent.id }}" />
+        {% endif %}
+
+        <button class="govuk-button" data-module="govuk-button" style="text-align:right">
+          {% if parent.selected %} {{ cta.remove }} {% else %} {{ cta.add }} {% endif %}
+        </button>
+      </form>
       {% endif %}
     </div>
   </div>

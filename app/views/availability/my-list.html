@@ -14,6 +14,8 @@ FA Availability Prototype
         <div class="govuk-grid-column-one-half">
         {% include "availability/components/card.html" %}
         </div>
+        {% else %}
+        <p class="govuk-body">You have no foster parents in your list.</p class="govuk-body">
         {% endfor %}
     </div>
 

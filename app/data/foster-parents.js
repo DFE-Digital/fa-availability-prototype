@@ -1,6 +1,6 @@
 module.exports = [
   {
-    "id": "1",
+    "id": 1,
     "title": "Mr",
     "fname": "John",
     "surname": "Smith",
@@ -21,7 +21,7 @@ module.exports = [
     "car": "Yes"
   },
   {
-    "id": "2",
+    "id": 2,
     "title": "Mrs",
     "fname": "Gina",
     "surname": "Gorbe",
@@ -42,7 +42,7 @@ module.exports = [
     "car": "No"
   },
   {
-    "id": "3",
+    "id": 3,
     "title": "Ms",
     "fname": "Reena",
     "surname": "Pillow",
@@ -63,7 +63,7 @@ module.exports = [
     "car": "Yes"
   },
   {
-    "id": "4",
+    "id": 4,
     "title": "Miss",
     "fname": "Megan",
     "surname": "Cuschin",
@@ -84,7 +84,7 @@ module.exports = [
     "car": "No"
   },
   {
-    "id": "5",
+    "id": 5,
     "title": "Mr",
     "fname": "Paul",
     "surname": "Window",
@@ -105,7 +105,7 @@ module.exports = [
     "car": "Yes"
   },
   {
-    "id": "6",
+    "id": 6,
     "title": "Mrs",
     "fname": "Roby",
     "surname": "Door",
@@ -126,7 +126,7 @@ module.exports = [
     "car": "No"
   },
   {
-    "id": "7",
+    "id": 7,
     "title": "Ms",
     "fname": "Laura",
     "surname": "Smith",
@@ -147,7 +147,7 @@ module.exports = [
     "car": "Yes"
   },
   {
-    "id": "8",
+    "id": 8,
     "title": "Miss",
     "fname": "Martha",
     "surname": "Richarson",
@@ -168,7 +168,7 @@ module.exports = [
     "car": "No"
   },
   {
-    "id": "9",
+    "id": 9,
     "title": "Mr",
     "fname": "Peter",
     "surname": "Smith",
@@ -189,7 +189,7 @@ module.exports = [
     "car": "Yes"
   },
   {
-    "id": "10",
+    "id": 10,
     "title": "Mrs",
     "fname": "Lila",
     "surname": "Panda",
@@ -210,7 +210,7 @@ module.exports = [
     "car": "No"
   },
   {
-    "id": "11",
+    "id": 11,
     "title": "Ms",
     "fname": "Meera",
     "surname": "Linth",
@@ -231,7 +231,7 @@ module.exports = [
     "car": "Yes"
   },
   {
-    "id": "12",
+    "id": 12,
     "title": "Miss",
     "fname": "Pauline",
     "surname": "Burton",
@@ -252,7 +252,7 @@ module.exports = [
     "car": "No"
   },
   {
-    "id": "13",
+    "id": 13,
     "title": "Mr",
     "fname": "Martin",
     "surname": "Nike",
@@ -273,7 +273,7 @@ module.exports = [
     "car": "Yes"
   },
   {
-    "id": "14",
+    "id": 14,
     "title": "Mrs",
     "fname": "Isabelle",
     "surname": "Adidas",
@@ -294,7 +294,7 @@ module.exports = [
     "car": "No"
   },
   {
-    "id": "15",
+    "id": 15,
     "title": "Ms",
     "fname": "Sunshine",
     "surname": "Gucci",
@@ -315,7 +315,7 @@ module.exports = [
     "car": "Yes"
   },
   {
-    "id": "16",
+    "id": 16,
     "title": "Miss",
     "fname": "Rose",
     "surname": "Armani",

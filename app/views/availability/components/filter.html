@@ -5,7 +5,11 @@
     <select class="govuk-select" id="type" name="type">
         <option disabled selected value>none selected</option>
     {% for option in filter.options %}
+    {% if option === selected %}
+        <option selected value="{{ option }}">{{ option }}</option>
+        {% else %}
         <option value="{{ option }}">{{ option }}</option>
+        {% endif %}
     {% endfor %}
     </select>
 </div>

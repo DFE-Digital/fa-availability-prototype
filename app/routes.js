@@ -10,7 +10,10 @@ router.get('/search-confirmation', (req, res) => {
   })
 
   router.get('/shortlist', (req, res) => {
-    res.render('availability/shortlist', { fosterParents: fosterParents.filter(parent => parent.type == req.query.type) })
+    res.render('availability/shortlist', {
+      fosterParents: fosterParents.filter(parent => parent.type == req.query.type),
+      selected: req.query.type
+    })
 })
 
 router.get('/my-list', (req, res) => {

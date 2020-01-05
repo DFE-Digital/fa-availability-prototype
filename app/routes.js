@@ -31,6 +31,7 @@ const removeFromMyList = (remove) => {
 }
 
 router.get('/search-confirmation', (req, res) => {
+  myList = []
   res.render('availability/search-confirmation')
 })
 

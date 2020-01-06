@@ -23,7 +23,7 @@ FA Availability Prototype
                     Working through:
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    -
+                    {{ parent.workingThrough }}
                 </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -56,6 +56,14 @@ FA Availability Prototype
                 </dt>
                 <dd class="govuk-summary-list__value">
                     {{ parent.address }}
+                </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    Contact:
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    {{ parent.contact }}
                 </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -143,7 +151,7 @@ FA Availability Prototype
                     Beds currently available:
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    -
+                    {{ parent.bedsAvailable }}
                 </dd>
             </div>
         </dl>
@@ -159,7 +167,7 @@ FA Availability Prototype
                     Accommodation type:
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    -
+                    {{ parent.houseType }}
                 </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -167,7 +175,7 @@ FA Availability Prototype
                     Total number of beds available for foster children:
                 </dt>
                 <dd class="govuk-summary-list__value">
-                    {{ parent.beds }}
+                    -
                 </dd>
             </div>
             <div class="govuk-summary-list__row">

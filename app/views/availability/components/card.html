@@ -42,6 +42,9 @@
     <div class="govuk-grid-column-one-half" style="text-align:right">
       {% if cta %}
       <form action="/shortlist" method="post" class="form">
+        {% if selected %}
+        <input type="hidden" name="type" value="{{ selected }}" />
+        {% endif %}
         {% if parent.selected %}
         <input type="hidden" name="remove" value="{{ parent.id }}" />
         {% else %}

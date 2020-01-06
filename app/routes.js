@@ -49,8 +49,8 @@ router.post('/shortlist', (req, res) => {
   removeFromMyList(parseInt(req.body.remove))
 
   res.render('availability/shortlist', {
-    fosterParents: req.query.type ? initialiseFosterParentList().filter(parent => parent.type == req.query.type) : initialiseFosterParentList(),
-    selected: req.query.type
+    fosterParents: req.body.type ? initialiseFosterParentList().filter(parent => parent.type == req.body.type) : initialiseFosterParentList(),
+    selected: req.body.type
   })
 })
 

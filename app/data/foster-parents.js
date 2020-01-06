@@ -4,7 +4,7 @@ module.exports = [
     "title": "Mr",
     "fname": "John",
     "surname": "Smith",
-    "address": "2, Greenwich, London",
+    "address": "2, High St, Greenwich, London",
     "email": "j.smith@gmail.com",
     "gender": "M",
     "type": "Long-term",
@@ -18,14 +18,18 @@ module.exports = [
     "practising": "No",
     "pets": "Dog",
     "drivingLicence": "Yes",
-    "car": "Yes"
+    "car": "Yes",
+    "contact": "02084762369",
+    "workingThrough": "IFA",
+    "bedsAvailable": 2,
+    "houseType": "Flat"
   },
   {
     "id": 2,
     "title": "Mrs",
     "fname": "Gina",
     "surname": "Gorbe",
-    "address": "10, Private Street",
+    "address": "10, Private Stree",
     "email": "g.g@gmail.com",
     "gender": "F",
     "type": "Long-term",
@@ -39,7 +43,11 @@ module.exports = [
     "practising": "Yes",
     "pets": "Cat",
     "drivingLicence": "No",
-    "car": "No"
+    "car": "No",
+    "contact": "0163789750",
+    "workingThrough": "LA",
+    "bedsAvailable": 2,
+    "houseType": "Semi-detached"
   },
   {
     "id": 3,
@@ -60,7 +68,11 @@ module.exports = [
     "practising": "No",
     "pets": "No",
     "drivingLicence": "Yes",
-    "car": "Yes"
+    "car": "Yes",
+    "contact": "07643234567",
+    "workingThrough": "LA",
+    "bedsAvailable": 3,
+    "houseType": "Terrace"
   },
   {
     "id": 4,
@@ -81,7 +93,11 @@ module.exports = [
     "practising": "Yes",
     "pets": "Gold fish",
     "drivingLicence": "No",
-    "car": "No"
+    "car": "No",
+    "contact": "0876352413",
+    "workingThrough": "IFA",
+    "bedsAvailable": 2,
+    "houseType": "Flat"
   },
   {
     "id": 5,
@@ -102,7 +118,11 @@ module.exports = [
     "practising": "No",
     "pets": "Gog",
     "drivingLicence": "Yes",
-    "car": "Yes"
+    "car": "Yes",
+    "contact": "0798654278",
+    "workingThrough": "IFA",
+    "bedsAvailable": 1,
+    "houseType": "Semi-detached"
   },
   {
     "id": 6,
@@ -123,7 +143,11 @@ module.exports = [
     "practising": "Yes",
     "pets": "No",
     "drivingLicence": "No",
-    "car": "No"
+    "car": "No",
+    "contact": "02056784357",
+    "workingThrough": "LA",
+    "bedsAvailable": 3,
+    "houseType": "Terrace"
   },
   {
     "id": 7,
@@ -133,7 +157,7 @@ module.exports = [
     "address": "76, Station Railway Road",
     "email": "Laura.smith@gmail.com",
     "gender": "F",
-    "type": "Short-term",
+    "type": "Long-term",
     "childAgeRange": "11-15",
     "noExistingChildren": 0,
     "nationality": "Polish",
@@ -144,7 +168,11 @@ module.exports = [
     "practising": "No",
     "pets": "Cat",
     "drivingLicence": "Yes",
-    "car": "Yes"
+    "car": "Yes",
+    "contact": "0556783567",
+    "workingThrough": "LA",
+    "bedsAvailable": 1,
+    "houseType": "Flat"
   },
   {
     "id": 8,
@@ -154,7 +182,7 @@ module.exports = [
     "address": "88, South Colonade",
     "email": "Marich@gmail.com",
     "gender": "F",
-    "type": "Long-term",
+    "type": "Short-term",
     "childAgeRange": "5-10",
     "noExistingChildren": 1,
     "nationality": "Portuguese",
@@ -165,7 +193,11 @@ module.exports = [
     "practising": "Yes",
     "pets": "Chickens",
     "drivingLicence": "No",
-    "car": "No"
+    "car": "No",
+    "contact": "02084762369",
+    "workingThrough": "IFA",
+    "bedsAvailable": 2,
+    "houseType": "Semi-detached"
   },
   {
     "id": 9,
@@ -175,7 +207,7 @@ module.exports = [
     "address": "94, Westcombe Park",
     "email": "peter.smith@gmail.com",
     "gender": "M",
-    "type": "Short breaks",
+    "type": "Short breaks (Respite)",
     "childAgeRange": "3-4",
     "noExistingChildren": 0,
     "nationality": "British",
@@ -186,7 +218,11 @@ module.exports = [
     "practising": "No",
     "pets": "No",
     "drivingLicence": "Yes",
-    "car": "Yes"
+    "car": "Yes",
+    "contact": "0163789750",
+    "workingThrough": "IFA",
+    "bedsAvailable": 1,
+    "houseType": "Terrace"
   },
   {
     "id": 10,
@@ -196,7 +232,7 @@ module.exports = [
     "address": "23, Green Filed private",
     "email": "lilalila@gmail.com",
     "gender": "M",
-    "type": "Short breaks",
+    "type": "Short breaks (Respite)",
     "childAgeRange": "16-17",
     "noExistingChildren": 3,
     "nationality": "British",
@@ -207,7 +243,11 @@ module.exports = [
     "practising": "Yes",
     "pets": "Cat",
     "drivingLicence": "No",
-    "car": "No"
+    "car": "No",
+    "contact": "07643234567",
+    "workingThrough": "LA",
+    "bedsAvailable": 4,
+    "houseType": "Flat"
   },
   {
     "id": 11,
@@ -228,7 +268,11 @@ module.exports = [
     "practising": "No",
     "pets": "Dog",
     "drivingLicence": "Yes",
-    "car": "Yes"
+    "car": "Yes",
+    "contact": "0876352413",
+    "workingThrough": "LA",
+    "bedsAvailable": 2,
+    "houseType": "Semi-detached"
   },
   {
     "id": 12,
@@ -249,7 +293,11 @@ module.exports = [
     "practising": "Yes",
     "pets": "No",
     "drivingLicence": "No",
-    "car": "No"
+    "car": "No",
+    "contact": "0798654278",
+    "workingThrough": "IFA",
+    "bedsAvailable": 1,
+    "houseType": "Terrace"
   },
   {
     "id": 13,
@@ -270,7 +318,11 @@ module.exports = [
     "practising": "No",
     "pets": "Dog",
     "drivingLicence": "Yes",
-    "car": "Yes"
+    "car": "Yes",
+    "contact": "02056784357",
+    "workingThrough": "IFA",
+    "bedsAvailable": 2,
+    "houseType": "Flat"
   },
   {
     "id": 14,
@@ -291,7 +343,11 @@ module.exports = [
     "practising": "Yes",
     "pets": "No",
     "drivingLicence": "No",
-    "car": "No"
+    "car": "No",
+    "contact": "0556783567",
+    "workingThrough": "LA",
+    "bedsAvailable": 3,
+    "houseType": "Semi-detached"
   },
   {
     "id": 15,
@@ -312,7 +368,11 @@ module.exports = [
     "practising": "No",
     "pets": "Cat",
     "drivingLicence": "Yes",
-    "car": "Yes"
+    "car": "Yes",
+    "contact": "0468256374",
+    "workingThrough": "LA",
+    "bedsAvailable": 2,
+    "houseType": "Terrace"
   },
   {
     "id": 16,
@@ -333,6 +393,10 @@ module.exports = [
     "practising": "Yes",
     "pets": "Gold fish",
     "drivingLicence": "No",
-    "car": "No"
+    "car": "No",
+    "contact": "05567345290",
+    "workingThrough": "IFA",
+    "bedsAvailable": 3,
+    "houseType": "Flat"
   }
 ]

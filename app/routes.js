@@ -6,25 +6,38 @@ const router = express.Router()
 const fosterParents = require('./data/foster-parents')
 let myList = []
 
+/**
+ * initialse the foster parent data to add the selected flag if the parent
+ * is in myList, so this flag can be used to show the my list button as
+ * add to my list or remove from my list.
+ */
 const initialiseFosterParentList = () => {
   return fosterParents.map(parent => {
     return myList.indexOf(parent.id) >= 0 ? { ...parent, selected: true } : parent
   })
 }
 
-const addToMyList = (add) => {
+/**
+ * if mylist doesnt contain id then add it to myList array.
+ * @param {number} id 
+ */
+const addToMyList = id => {
 
-  if (!add) return false
+  if (!id) return false
 
-  if (myList.indexOf(add) === -1) {
-    myList.push(add)
+  if (myList.indexOf(id) === -1) {
+    myList.push(id)
   }
 }
 
-const removeFromMyList = (remove) => {
-  if (!remove) return false
+/**
+ * if mylist contains id then remove it from myList array.
+ * @param {number} id 
+ */
+const removeFromMyList = id => {
+  if (!id) return false
 
-  const index = myList.indexOf(remove);
+  const index = myList.indexOf(id);
   if (index > -1) {
     myList.splice(index, 1);
   }

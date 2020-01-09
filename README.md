@@ -2,7 +2,7 @@
 
 Prototype to enable key user journey and functionality to filter foster parent profiles that match a child's profile, creating a shortlist that authorities can use to aid successful child placements.
 
-Built on top of the (GOV prototype toolkit)[https://govuk-prototype-kit.herokuapp.com/docs/install]
+Built on top of the [GOV prototype toolkit](https://govuk-prototype-kit.herokuapp.com/docs/install)
 
 ## Screenshots
 
@@ -19,7 +19,7 @@ Built on top of the (GOV prototype toolkit)[https://govuk-prototype-kit.herokuap
 
 ## Technical documentation
 
-The prototype uses predefined data. One child that is hardcoded in the templates, and a selection of foster parents in JSON format (here)[https://github.com/DFE-Digital/fa-availability-prototype/blob/master/app/data/foster-parents.js]
+The prototype uses predefined data. One child that is hardcoded in the templates, and a selection of foster parents in JSON format [here](https://github.com/DFE-Digital/fa-availability-prototype/blob/master/app/data/foster-parents.js)
 
 The first page of the prototype 'find child' is there for display purposes only i.e entering data and submitting this page takes you 'child confirmation' page that shows the name, age, sex of the same child.
 

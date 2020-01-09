@@ -15,7 +15,9 @@ Built on top of the [GOV prototype toolkit](https://govuk-prototype-kit.herokuap
 
 ## Live examples
 
-- [Fostering Availability Prototype](https://dfe-shortlisting.herokuapp.com/)
+The prototype was deployed to Heroku for use during user research sessions.
+
+[Fostering Availability Prototype](https://dfe-shortlisting.herokuapp.com/)
 
 ## Technical documentation
 
@@ -27,7 +29,7 @@ The next page shows the parents from the JSON file. The filters are there for di
 
 The my list page filters out foster parents that are not selected and hence displays selected parents.
 
-You can view the full profile of the child or a chosen parent.
+You can view the full profile of the child or a chosen parent. The child profile page has a link to the [diary review application](https://github.com/DFE-Digital/fa-diary-review)
 
 ### Dependencies
 
